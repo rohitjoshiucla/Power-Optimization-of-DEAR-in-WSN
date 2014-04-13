@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario name="test2" nodeIdCounter="30">
+ <list-variables>
+  <listVariable key="DEM-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="DTED-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="TERRAIN-FEATURES-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="NUM-MOBILITY-GROUPS" format="ValueList" sizeOrValue="1" />
+  <listVariable key="PROPAGATION-CHANNEL-FREQUENCY" format="List" sizeOrValue="1" />
+  <listVariable key="IP-QUEUE-NUM-PRIORITIES" format="ValueList" sizeOrValue="3" />
+ </list-variables>
+ <global-settings>
+  <category title="General">
+   <subcategory title="General">
+    <variable name="Simulation Time" value="10M" modified="true" />
+   </subcategory>
+  </category>
+  <category title="Node Positioning">
+   <subcategory title="Nodes">
+    <variable name="Number of Nodes" value="30" modified="true" />
+    <variable name="Node Placement Strategy" value="File" modified="true" child="yes">
+     <option name="File">
+      <variable name="Position File" value="test2.nodes" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Wireless Settings">
+   <subcategory title="Radio/Physical Layer">
+    <variable name="Energy Model Specification" value="GENERIC" modified="true" />
+    <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+     <option name="Simple Linear (Coloumbous count) model">
+      <variable name="Battery Cap(mAhr)" value="12" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Network Protocols">
+   <subcategory title="Routing Protocol">
+    <variable name="Routing Policy" value="Dynamic" modified="false" child="yes">
+     <option name="Dynamic">
+      <variable name="Routing Protocol for IPv4" value="AODV" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+ </global-settings>
+ <hierarchy-component ID="0" x="750.0" y="750.0" z="0.0" normalWidth="1500.0" normalHeight="1500.0" normalDepth="2000.0" logicalWidth="1500.0" logicalHeight="1500.0" logicalDepth="3000.0" scaleFactor="1.0" revalidationRequired="false" closed="false" maintainAspectRatio="false" connectionIncrement="0">
+  <asID>0</asID>
+  <scenario-components>
+   <mobilenode-component ID="1" x="180.61" y="104.18" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="1" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host1">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" />
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225473" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="2" x="453.92" y="260.11" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="2" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host2">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225474" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:2" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="3" x="691.89" y="77.58" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="3" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host3">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225475" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:3" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="4" x="836.04" y="213.63" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="4" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host4">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225476" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:4" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="5" x="1085.09" y="163.61" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="5" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host5">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225477" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:5" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="6" x="1471.47" y="269.36" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="6" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host6">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225478" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:6" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="7" x="38.72" y="579.47" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="7" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host7">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225479" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:7" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="8" x="405.83" y="461.74" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="8" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host8">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225480" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:8" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="9" x="716.92" y="338.16" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="9" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host9">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225481" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:9" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="10" x="828.59" y="391.23" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="10" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host10">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225482" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:A" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="11" x="1223.03" y="509.03" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="11" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host11">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225483" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:B" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="12" x="1332.68" y="534.46" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="12" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host12">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225484" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:C" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="13" x="213.15" y="790.94" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="13" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host13">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225485" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:D" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="14" x="313.61" y="658.56" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="14" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host14">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225486" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:E" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="15" x="558.54" y="797.68" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="15" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host15">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225487" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:F" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="16" x="808.39" y="793.68" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="16" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host16">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225488" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:10" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="17" x="1200.53" y="850.92" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="17" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host17">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225489" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:11" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="18" x="1349.29" y="874.82" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="18" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host18">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225490" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:12" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="19" x="198.35" y="1069.21" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="19" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host19">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225491" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:13" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="20" x="408.78" y="1167.81" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="20" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host20">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225492" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:14" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="21" x="678.81" y="1130.91" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="21" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host21">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225493" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:15" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="22" x="989.68" y="1144.86" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="22" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host22">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225494" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:16" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="23" x="1206.1" y="1175.91" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="23" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host23">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225495" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:17" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="24" x="1368.85" y="1172.92" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="24" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host24">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225496" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:18" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="25" x="1.81" y="1394.23" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="25" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host25">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225497" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:19" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="26" x="433.89" y="1322.26" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="26" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host26">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225498" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1A" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="27" x="707.91" y="1430.09" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="27" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host27">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225499" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1B" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="28" x="959.44" y="1394.05" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="28" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host28">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225500" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1C" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="29" x="1000.12" y="1207.24" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="29" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host29">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225501" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1D" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="30" x="1303.97" y="1404.14" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="30" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host30">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225502" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1E" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+  </scenario-components>
+ </hierarchy-component>
+ <connector-components>
+  <application-connector sourceID="30" destinationID="1" animSourceEndPointX="0.0" animSourceEndPointY="0.0" animTargetEndPointX="0.0" animTargetEndPointY="0.0" oldSourceEndPointX="0.0" oldSourceEndPointY="0.0" oldTargetEndPointX="0.0" oldTargetEndPointY="0.0" currentSourceEndPointX="0.0" currentSourceEndPointY="0.0" currentTargetEndPointX="0.0" currentTargetEndPointY="0.0" breakX="0.0" breakY="0.0" pointCount="2" breaked="false" manualXY="false" manualYZ="false" manualZX="false" type="Application" applicationName="CBR" sourceIdentifier="30" destinationIdentifier="1">
+   <pathVectorXY>
+    <pathXY x="1303.9699764702264" y="95.85999316117895" />
+    <pathXY x="1303.9699764702264" y="714.5557553749385" />
+    <pathXY x="741.8277169775776" y="714.5557553749385" />
+    <pathXY x="741.8277169775776" y="913.0993940698819" />
+    <pathXY x="180.60999592458168" y="913.0993940698819" />
+    <pathXY x="180.60999592458168" y="1395.8199568620817" />
+   </pathVectorXY>
+   <application-properties name="CBR">
+    <variable name="Items to Send" value="20000" modified="true" />
+    <variable name="End Time" value="10M" modified="true" />
+   </application-properties>
+  </application-connector>
+ </connector-components>
+</scenario>
+

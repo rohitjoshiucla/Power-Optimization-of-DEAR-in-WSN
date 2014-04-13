@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario name="test" nodeIdCounter="10">
+ <list-variables>
+  <listVariable key="DEM-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="DTED-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="TERRAIN-FEATURES-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="NUM-MOBILITY-GROUPS" format="ValueList" sizeOrValue="1" />
+  <listVariable key="PROPAGATION-CHANNEL-FREQUENCY" format="List" sizeOrValue="1" />
+  <listVariable key="IP-QUEUE-NUM-PRIORITIES" format="ValueList" sizeOrValue="3" />
+ </list-variables>
+ <global-settings>
+  <category title="General">
+   <subcategory title="General">
+    <variable name="Simulation Time" value="10M" modified="true" />
+   </subcategory>
+  </category>
+  <category title="Node Positioning">
+   <subcategory title="Nodes">
+    <variable name="Number of Nodes" value="9" modified="true" />
+    <variable name="Node Placement Strategy" value="File" modified="true" child="yes">
+     <option name="File">
+      <variable name="Position File" value="test.nodes" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Wireless Settings">
+   <subcategory title="Radio/Physical Layer">
+    <variable name="Energy Model Specification" value="GENERIC" modified="true" />
+    <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+     <option name="Simple Linear (Coloumbous count) model">
+      <variable name="Battery Charge Monitoring Period" value="3S" modified="true" />
+      <variable name="Battery Cap(mAhr)" value="10" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Network Protocols">
+   <subcategory title="Routing Protocol">
+    <variable name="Routing Policy" value="Dynamic" modified="false" child="yes">
+     <option name="Dynamic">
+      <variable name="Routing Protocol for IPv4" value="AODV" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+ </global-settings>
+ <hierarchy-component ID="0" x="750.0" y="750.0" z="0.0" normalWidth="1500.0" normalHeight="1500.0" normalDepth="2000.0" logicalWidth="1500.0" logicalHeight="1500.0" logicalDepth="3000.0" scaleFactor="1.0" revalidationRequired="false" closed="false" maintainAspectRatio="false" connectionIncrement="0">
+  <asID>0</asID>
+  <scenario-components>
+   <mobilenode-component ID="1" x="400.0" y="400.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="1" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host1">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" />
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225473" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="2" x="400.0" y="700.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="2" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host2">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225474" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:2" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="3" x="700.0" y="400.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="3" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host3">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225475" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:3" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="4" x="400.0" y="1000.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="4" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host4">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225476" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:4" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="5" x="1000.0" y="400.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="5" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host5">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225477" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:5" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="6" x="1000.0" y="700.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="6" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host6">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225478" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:6" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="7" x="700.0" y="1000.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="7" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host7">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225479" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:7" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="8" x="1000.0" y="1000.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="8" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host8">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225480" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:8" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="10" x="700.0" y="700.0" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="9" deviceName="DEFAULT" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host9">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225481" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:9" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+  </scenario-components>
+ </hierarchy-component>
+ <connector-components>
+  <application-connector sourceID="8" destinationID="1" animSourceEndPointX="0.0" animSourceEndPointY="0.0" animTargetEndPointX="0.0" animTargetEndPointY="0.0" oldSourceEndPointX="0.0" oldSourceEndPointY="0.0" oldTargetEndPointX="0.0" oldTargetEndPointY="0.0" currentSourceEndPointX="0.0" currentSourceEndPointY="0.0" currentTargetEndPointX="0.0" currentTargetEndPointY="0.0" breakX="0.0" breakY="0.0" pointCount="2" breaked="false" manualXY="true" manualYZ="false" manualZX="false" type="Application" applicationName="CBR" sourceIdentifier="8" destinationIdentifier="1">
+   <pathVectorXY>
+    <pathXY x="1000.000040154708" y="500.000020077354" />
+    <pathXY x="1000.000040154708" y="394.7368421052632" />
+    <pathXY x="281.5789574070981" y="394.7368421052632" />
+    <pathXY x="281.5789574070981" y="1099.9999598452919" />
+    <pathXY x="400.00001003867703" y="1099.9999598452919" />
+   </pathVectorXY>
+   <application-properties name="CBR">
+    <variable name="Items to Send" value="2000000" modified="true" />
+    <variable name="End Time" value="10M" modified="true" />
+   </application-properties>
+  </application-connector>
+ </connector-components>
+</scenario>
+

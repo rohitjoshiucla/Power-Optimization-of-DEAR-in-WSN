@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario name="test4" nodeIdCounter="32">
+ <list-variables>
+  <listVariable key="DEM-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="DTED-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="TERRAIN-FEATURES-FILENAME" format="List" sizeOrValue="1" />
+  <listVariable key="NUM-MOBILITY-GROUPS" format="ValueList" sizeOrValue="1" />
+  <listVariable key="PROPAGATION-CHANNEL-FREQUENCY" format="List" sizeOrValue="1" />
+  <listVariable key="IP-QUEUE-NUM-PRIORITIES" format="ValueList" sizeOrValue="3" />
+ </list-variables>
+ <global-settings>
+  <category title="General">
+   <subcategory title="General">
+    <variable name="Simulation Time" value="600S" modified="true" />
+   </subcategory>
+  </category>
+  <category title="Node Positioning">
+   <subcategory title="Nodes">
+    <variable name="Number of Nodes" value="16" modified="true" />
+    <variable name="Node Placement Strategy" value="File" modified="true" child="yes">
+     <option name="File">
+      <variable name="Position File" value="test4.nodes" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Wireless Settings">
+   <subcategory title="Radio/Physical Layer">
+    <variable name="Energy Model Specification" value="GENERIC" modified="true" />
+    <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+     <option name="Simple Linear (Coloumbous count) model">
+      <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+      <variable name="Battery Cap(mAhr)" value="1" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+  <category title="Network Protocols">
+   <subcategory title="Routing Protocol">
+    <variable name="Routing Policy" value="Dynamic" modified="false" child="yes">
+     <option name="Dynamic">
+      <variable name="Routing Protocol for IPv4" value="AODV" modified="true" />
+     </option>
+    </variable>
+   </subcategory>
+  </category>
+ </global-settings>
+ <hierarchy-component ID="0" x="750.0" y="750.0" z="0.0" normalWidth="1500.0" normalHeight="1500.0" normalDepth="2000.0" logicalWidth="1500.0" logicalHeight="1500.0" logicalDepth="3000.0" scaleFactor="1.0" revalidationRequired="false" closed="false" maintainAspectRatio="false" connectionIncrement="0">
+  <asID>0</asID>
+  <scenario-components>
+   <mobilenode-component ID="17" x="255.9" y="326.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="1" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host1">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="5" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225473" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:1" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="18" x="555.9" y="326.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="2" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host2">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225474" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:2" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="19" x="855.9" y="326.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="3" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host3">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225475" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:3" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="20" x="1155.9" y="326.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="4" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host4">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225476" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:4" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="21" x="255.9" y="626.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="5" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host5">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225477" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:5" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="22" x="555.9" y="626.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="6" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host6">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225478" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:6" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="23" x="855.9" y="626.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="7" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host7">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225479" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:7" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="24" x="1155.9" y="626.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="8" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host8">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225480" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:8" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="25" x="255.9" y="926.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="9" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host9">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225481" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:9" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="26" x="555.9" y="926.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="10" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host10">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225482" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:A" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="27" x="855.9" y="926.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="11" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host11">
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225483" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:B" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="28" x="1155.9" y="926.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="12" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host12">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225484" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:C" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="29" x="255.9" y="1226.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="13" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host13">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225485" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:D" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="30" x="555.9" y="1226.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="14" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host14">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225486" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:E" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="31" x="855.9" y="1226.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="0" nodeID="15" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host15">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="2" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225487" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:F" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+   <mobilenode-component ID="32" x="1155.9" y="1226.77" z="0.0" normalWidth="0.0" normalHeight="0.0" normalDepth="0.0" logicalWidth="0.0" logicalHeight="0.0" logicalDepth="0.0" scaleFactor="1.0" revalidationRequired="false" closed="true" maintainAspectRatio="true" connectionIncrement="1" nodeID="16" deviceName="Default" deviceModel="&lt;custom&gt;" nameUserDefined="true" name="host16">
+    <category title="Node Configuration">
+     <subcategory title="Radio/Physical Layer">
+      <variable name="Battery Model" value="Simple Linear (Coloumbous count) model" modified="true" child="yes">
+       <option name="Simple Linear (Coloumbous count) model">
+        <variable name="Battery Charge Monitoring Period" value="6S" modified="true" />
+        <variable name="Battery Cap(mAhr)" value="5" modified="true" />
+       </option>
+      </variable>
+     </subcategory>
+    </category>
+    <interfaceAddressMapList>
+     <IPAddressInterfaceMap ipAddress="3221225488" subnetMask="4294967040" interfaceIndex="0" interfaceName="interface0" ipAddressAssigned="false" subnetMaskAssigned="false" interfaceNameAssigned="false" networkIdentifier="0" subnetAddress="3221225472" accessPoint="false" ipv6Address="2000:0:0:0:0:0:0:10" interfaceType="DEFAULT_TYPE" isUnnumbered="NO" interfaceNumber="DEFAULT_NUMBER" ipv6AddressPrefix="64" />
+    </interfaceAddressMapList>
+    <gatekeeperConfiguration gatekeeper="false" gatekeeperAddress="" />
+   </mobilenode-component>
+  </scenario-components>
+ </hierarchy-component>
+ <connector-components>
+  <application-connector sourceID="32" destinationID="17" animSourceEndPointX="0.0" animSourceEndPointY="0.0" animTargetEndPointX="0.0" animTargetEndPointY="0.0" oldSourceEndPointX="0.0" oldSourceEndPointY="0.0" oldTargetEndPointX="0.0" oldTargetEndPointY="0.0" currentSourceEndPointX="0.0" currentSourceEndPointY="0.0" currentTargetEndPointX="0.0" currentTargetEndPointY="0.0" breakX="0.0" breakY="0.0" pointCount="2" breaked="false" manualXY="false" manualYZ="false" manualZX="false" type="Application" applicationName="CBR" sourceIdentifier="16" destinationIdentifier="1">
+   <pathVectorXY>
+    <pathXY x="1155.9000090351255" y="273.2300044983391" />
+    <pathXY x="1155.9000090351255" y="398.1315732940914" />
+    <pathXY x="137.78974878506398" y="398.1315732940914" />
+    <pathXY x="137.78974878506398" y="1173.2300285279282" />
+    <pathXY x="255.89998500553642" y="1173.2300285279282" />
+   </pathVectorXY>
+   <application-properties name="CBR">
+    <variable name="Items to Send" value="1000000" modified="true" />
+    <variable name="End Time" value="600S" modified="true" />
+   </application-properties>
+  </application-connector>
+ </connector-components>
+</scenario>
+
